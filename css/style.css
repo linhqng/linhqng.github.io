@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #444; }
+
+button:focus {
+  outline: none !important; }
+
+.button {
+  border-radius: 4rem;
+  border: none;
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.025rem; }
+  .button--red {
+    font-weight: bold;
+    padding: 1.2rem;
+    background-color: #ff4e50; }
+  .button--tpr {
+    background-color: transparent;
+    padding: 1rem 1.8rem; }
+  .button--border {
+    border: 0.2rem solid #fff; }
+  .button--txt-red {
+    color: #ff4e50;
+    border: 1px solid #ff4e50; }
+  @media only screen and (max-width: 375px) {
+    .button--rp {
+      width: 90%; } }
+
+.logo {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold; }
+
+.title {
+  font-weight: bold;
+  font-size: 2.2rem;
+  line-height: 2.7rem;
+  margin-bottom: 4rem;
+  color: #444444; }
+
+.list {
+  list-style: none; }
+  .list__item:visited, .list__item:link {
+    text-decoration: none !important;
+    color: #999;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2.6rem; }
+
+.header {
+  padding: 2rem 0;
+  height: 85vh;
+  background-image: url(../../img/header-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: normal; }
+  .header__content {
+    margin: 0 auto;
+    margin-top: 13vh;
+    max-width: 47rem; }
+    @media only screen and (max-width: 576px) {
+      .header__content {
+        margin-top: 2vh; } }
+  .header__title {
+    color: #fff;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 6.3rem;
+    letter-spacing: 0.2rem; }
+  .header__sub {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    color: #f7f3f2;
+    font-weight: 300;
+    margin: 3vh 0; }
+  @media only screen and (max-width: 576px) {
+    .header__logo {
+      margin-top: 9vh; } }
+  @media only screen and (max-width: 375px) {
+    .header {
+      height: 100vh; } }
+
+.footer {
+  padding: 3rem 0; }
+  .footer__logo {
+    color: #ff4e50;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px; }
+  .footer__category {
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: #444;
+    margin-bottom: 1.1rem; }
+  .footer__copyright {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: #ccc; }
+
+.main-content {
+  padding: 8rem 0 10rem; }
+
+.card-list,
+.partner {
+  margin-bottom: 9.4rem; }
+
+.holiday {
+  margin-bottom: 7.4rem; }
+
+.card {
+  border: none !important;
+  padding: 2.5rem;
+  margin: 1rem 0;
+  height: 45rem;
+  background-size: cover;
+  background-image: url(../../img/card-image-1.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+  .card__btn {
+    width: 7rem;
+    font-size: 1rem;
+    padding: 0.5rem 1.4rem;
+    font-weight: normal; }
+  .card__title {
+    font-size: 2.4rem;
+    letter-spacing: 0.05rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 3.5rem 0 2rem 0; }
+  .card__text {
+    font-family: "Roboto";
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: #e3e3e3; }
+  @media only screen and (max-width: 375px) {
+    .card {
+      height: 25rem; } }
+
+.person {
+  margin-bottom: 3rem; }
+  .person__name {
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    margin: 1.6rem 0 1.2rem; }
+  .person__desc {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.6rem; }
+    @media only screen and (max-width: 576px) {
+      .person__desc {
+        display: block;
+        padding: 0 5rem; } }
+
+.feature {
+  margin-bottom: 2.5rem; }
+  .feature__img {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    filter: brightness(90%); }
+  .feature__name {
+    z-index: 2;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; }
+
+.interest-input__text {
+  color: #666;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-bottom: 2.5rem; }
+
+.interest-input__input {
+  font-size: 1.4rem;
+  color: #999;
+  font-family: "Roboto";
+  outline: none;
+  padding: 0.8rem 2rem;
+  min-width: 28rem;
+  margin: 0 1rem 2rem 0; }
+
+.line {
+  height: 2px;
+  background-color: #ff4e50; }

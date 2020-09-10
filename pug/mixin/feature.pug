@@ -1,0 +1,7 @@
+mixin feature(col, feature__img, feature__name)
+    div.feature(class="col-md-"+col)
+        picture
+            source.feature__img(media="(min-width: 1440px)", srcset= feature__img+"-lg.png")
+            source.feature__img(media="(min-width: 768px)", srcset= feature__img+"-md.png")
+            img.feature__img(src= feature__img+".png", alt="feature")
+        h3.feature__name= feature__name

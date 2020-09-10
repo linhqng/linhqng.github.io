@@ -1,0 +1,53 @@
+extends layouts/layout.pug
+block header
+    header.header.container-fluid
+        .container-sm
+            .header__nav.d-flex.flex-sm-row-reverse.flex-column.justify-content-sm-between.align-items-center
+                .group-button
+                    button.button.button--tpr Login
+                    button.button.button--tpr.button--border Sign up
+                h2.logo.header__logo.text-uppercase DreamShare
+            .header__content.text-center
+                h1.header__title.text-uppercase Share your holiday dream
+                p.header__sub And find the perfect partner to full fill it
+                button.button.button--red.button--rp Find your holiday partner
+block content
+    .container-sm.main-content.text-center
+        .card-list
+            h3.title How Dreamshare works?
+            .row
+                each card in cards
+                    +card(card.bg__img,card.btn__text,card.card__title,card.card__text)
+        .partner
+            h3.title Meet a partner for your best holiday
+            .row
+                each person in persons
+                    +avatar(person.pn__img,person.pn__name,person.pn__desc)
+            button.button.button--tpr.button--txt-red.button--rp See other partners
+        .holiday
+            h3.title Discover holiday activity ideas
+            .row
+                each feature in features
+                    +feature(feature.col,feature.f__img,feature.f__name)
+        .interest-input
+            h3.title Crate your holiday activity
+            p.interest-input__text Hi! What are your holiday interests?
+            input.interest-input__input(type="text", placeholder= "Enter your insterests")
+            button.button.button--red.button--rp Search partners
+    .container-fluid.line
+block footer
+    footer.footer.container-sm
+        .row.text-md-left.text-center
+            .col-md
+                h2.logo.text-uppercase.footer__logo.mb-3.mb-md-0 DreamShare
+            .col-md
+                h5.footer__category Company
+                ul.list.row
+                    each category in categories
+                        +company(category)
+            .col-md
+                h5.footer__category Partners
+            .col-md
+                p.footer__copyright.text-uppercase.text-right Design by
+                img.float-right(src="img/areto.png", alt="areto")
+

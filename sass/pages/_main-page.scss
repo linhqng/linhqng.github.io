@@ -1,0 +1,113 @@
+.main-content {
+  padding: 8rem 0 10rem;
+}
+.card-list,
+.partner {
+  margin-bottom: 9.4rem;
+}
+
+.holiday {
+  margin-bottom: 7.4rem;
+}
+
+.card {
+  border: none !important;
+  padding: 2.5rem;
+  margin: 1rem 0;
+  height: 45rem;
+  background-size: cover;
+  background-image: url(../../img/card-image-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  &__btn {
+    width: 7rem;
+    font-size: 1rem;
+    padding: 0.5rem 1.4rem;
+    font-weight: normal;
+  }
+  &__title {
+    font-size: 2.4rem;
+    letter-spacing: 0.05rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 3.5rem 0 2rem 0;
+  }
+
+  &__text {
+    font-family: "Roboto";
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: #e3e3e3;
+  }
+
+  @media only screen and (max-width: 375px) {
+    height: 25rem;
+  }
+}
+
+.person {
+  margin-bottom: 3rem;
+  &__name {
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    margin: 1.6rem 0 1.2rem;
+  }
+
+  &__desc {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    @media only screen and (max-width: 576px) {
+      // width: 90%;
+      display: block;
+      padding: 0 5rem;
+    }
+  }
+}
+
+.feature {
+  margin-bottom: 2.5rem;
+  &__img {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    filter: brightness(90%);
+  }
+
+  &__name {
+    z-index: 2;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+}
+.interest-input {
+  &__text {
+    color: #666;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  &__input {
+    font-size: 1.4rem;
+    color: #999;
+    font-family: "Roboto";
+    outline: none;
+    padding: 0.8rem 2rem;
+    min-width: 28rem;
+    margin: 0 1rem 2rem 0;
+  }
+}
+.line {
+  height: 2px;
+  background-color: #ff4e50;
+}

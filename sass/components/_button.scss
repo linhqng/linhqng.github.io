@@ -1,0 +1,32 @@
+.button {
+  border-radius: 4rem;
+  border: none;
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.025rem;
+  &--red {
+    font-weight: bold;
+    padding: 1.2rem;
+    background-color: #ff4e50;
+  }
+  &--tpr {
+    background-color: transparent;
+    padding: 1rem 1.8rem;
+  }
+
+  &--border {
+    border: 0.2rem solid #fff;
+  }
+
+  &--txt-red {
+    color: #ff4e50;
+    border: 1px solid #ff4e50;
+  }
+
+  &--rp {
+    @media only screen and (max-width: 375px) {
+      width: 90%;
+    }
+  }
+}

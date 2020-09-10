@@ -1,0 +1,6 @@
+mixin card(bg__img, btn__text, card__title,card__text )
+    .col-md
+        .card.d-flex.justify-content-end(style="background-image: url("+bg__img+")")
+            button.button.button--red.card__btn= btn__text
+            h5.card__title.text-left= card__title
+            p.card__text.text-left= card__text

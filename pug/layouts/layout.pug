@@ -1,0 +1,74 @@
+include ../mixin/card.pug
+include ../mixin/avatar.pug
+include ../mixin/feature.pug
+include ../mixin/company.pug
+-
+  var cards = [{bg__img: "img/card-image-1.png",
+            btn__text: "STEP 1",
+            card__title: "Sed leo enim, condimentum",
+            card__text: "Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis."},
+            {bg__img: "img/card-image-2.png",
+            btn__text: "STEP 2",
+            card__title: "Morbi velit risus",
+            card__text: "Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est."},
+            {bg__img: "img/card-image-3.png",
+            btn__text: "STEP 3",
+            card__title: "Sed leo enim, condimentum",
+            card__text: "Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis."}];
+-
+  var persons = [{pn__img: "img/avatar-1.png",
+            pn__name: "Bradley Hunter",
+            pn__desc: "Based in Chicago. I love playing tennis and loud music."},
+            {pn__img: "img/avatar-2.png",
+            pn__name: "Marie Bennett",
+            pn__desc: "Currently living in Colorado. Lover of art, languages and travelling."},
+            {pn__img: "img/avatar-3.png",
+            pn__name: "Diana Wells",
+            pn__desc: "Living in Athens, Greece. I love black and white classics, chillout music and green tea."},
+            {pn__img: "img/avatar-4.png",
+            pn__name: "Christopher Pierce",
+            pn__desc: "Star Wars fanatic. I have a persistent enthusiasm to create new things."}];
+-
+  var features = [{col: "4",
+            f__img: "img/feature-1",
+            f__name: "Sports and Activis"},
+            {col: "4",
+            f__img: "img/feature-2",
+            f__name: "Wellness and Health"},
+            {col: "4",
+            f__img: "img/feature-3",
+            f__name: "Extreme Sports and Expeditions"},
+            {col: "4",
+            f__img: "img/feature-4",
+            f__name: "Games"},
+            {col: "8",
+            f__img: "img/feature-5",
+            f__name: "Culture and Education"},
+            {col: "8",
+            f__img: "img/feature-6",
+            f__name: "Enjomet and Relaxation"},
+            {col: "4",
+            f__img: "img/feature-7",
+            f__name: "Trevelling"}];
+
+-
+  var categories = ["About","Contact","Press", "Blog", "Terms and Privacy", "Help"];
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(name="keywords", content="")
+        meta(name="description", content="")
+        link(rel="shortcut icon", href="img/favicon.png", type="image/png")
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet",href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css",integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z",crossorigin="anonymous")
+        title dream share &mdash; your dream, your personality
+    body.wrapper
+        block header
+        block content
+        block footer
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js",integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV",crossorigin="anonymous")
+        script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js",integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj",crossorigin="anonymous")
+        script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js",integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN",crossorigin="anonymous")
